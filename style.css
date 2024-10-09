@@ -1,0 +1,157 @@
+:root {
+  --main-color: #3e3232;
+  --light-color: #503c3c;
+  --lighter-color: #7e6363;
+  --lightesr-color: #a87c7c;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.insta-div {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--main-color);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-navbar {
+  width: 20%;
+  position: fixed;
+  left: 0;
+  min-height: 100vh;
+  border: 1px solid white;
+
+  /* Flex */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  margin: 5% 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.logo h3 {
+  font-size: 4vh;
+}
+.div-body {
+  width: 80%;
+  min-height: 100vh;
+  border: 1px solid white;
+  /* Flex */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 10%;
+}
+
+.div-user-name {
+  min-height: 5%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin: 10px 20px;
+  align-items: center;
+  border: 1px solid white;
+  padding: 5px 10px;
+}
+.div-user-name h3 {
+  display: inline-block;
+  font-weight: 400;
+  padding: 0 10px;
+}
+
+.div-user-name button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 10px;
+  background-color: var(--lightesr-color);
+  cursor: pointer;
+  border: none;
+  transition: all 0.1 ease;
+}
+
+.div-user-name button:hover {
+  background-color: var(--lighter-color);
+}
+
+.div-profile-details {
+  min-height: 20em;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin: 10px 20px;
+  align-items: center;
+  border: 1px solid white;
+  padding: 5px 10px;
+}
+
+.div-profile-picture {
+  width: 30%;
+  border: 1px solid white;
+}
+
+.div-prifile-desc {
+  width: 70%;
+  border: 1px solid white;
+  height: 100%;
+  padding: 5px 10px;
+}
+
+.div-prifile-desc p {
+  /* background-color: #a87c7c; */
+  padding: 10px 5px;
+  margin: 2px 0;
+}
+
+.div-insta-post-grid {
+  min-height: 20em;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin: 10px 20px;
+  align-items: center;
+  border: 1px solid white;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.insta-post-grid {
+  width: 100%;
+  border: 1px solid rebeccapurple;
+  min-height: 50vh;
+  /* Display */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.indiv-post {
+  margin: 2px 10px;
+  /* border: 1px solid red; */
+  border: 1px solid white;
+  width: 250px;
+  height: 250px;
+}
+
+.indiv-post img {
+  width: 100%;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: contain;
+}
